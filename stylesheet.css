@@ -1,0 +1,154 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Times New Roman', Times, serif; 
+   box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    background: linear-gradient(135deg,#71b7e6,#e3801d);
+    padding-bottom: 20px;
+}
+.contianer{
+    max-width: 700px;
+    width: 100%;
+    background: #96beb1;
+    padding: 25px 30px;
+    border-radius: 14px;
+    padding-bottom: 10px;    
+}
+.contianer .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.contianer .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 30px;
+    background: linear-grad ient(135deg,#c519c5,#e3801d); 
+}
+.contianer form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin: 20px 0 12px 0 ;
+    width:  calc(100% /2 - 20 px);
+}
+.user-details .input-box .details{
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #bf0fcc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    ;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #e3d94f;
+}
+/* form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+} */
+/* .gender-details .category label{
+display: flex;
+align-items: center;
+} */
+/* .gender-details .category .dot-one{
+    height:15px ;
+    width: 18px;
+    border-radius: 50%;
+    background: rgb(187, 187, 187);
+    margin-right: 10px;
+    border: 5px solid transparent;
+} */
+/* #dot-2:checked ~ .category label .dot-one{
+background: black;
+border-color: rgb(72, 91, 214);
+background-color: beige;
+}
+
+#dot-3:checked ~ .category label .dot-two{
+    background: black;
+    border-color: rgb(72, 91, 214);
+    background-color: beige;
+    } */
+
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 155px;
+    margin: 45px;
+}
+/* testing for button */
+
+button {
+    --c:  #229091; /* the color*/
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+  
+  
+  
+  .button-body {
+    height: 6vh;
+    margin: 50px 40px 40px 40px;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    gap: 20px;
+  }
+  button {
+    font-family: system-ui, sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-weight: bold;  
+    border: none;
+  }
